@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "0cb71fe0-1116-4823-9507-e895814bf433",
+		"name": "desafio-coopeuch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2474715"
+	},
+	"item": [
+		{
+			"name": "tareas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tareas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/user?user=rrrr&password=123456565",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"user"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "rrrr"
+						},
+						{
+							"key": "password",
+							"value": "123456565"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tareas-por-nombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/por-nombre?nombre=Juan Rodriguez",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"por-nombre"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "Juan Rodriguez"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tareas-por-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/activos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"activos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"Juan Rodriguez2\",\r\n        \"descripcion\": \"hunter2882\",\r\n        \"isActive\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"name\": \"Juan Rodriguez_\",\r\n        \"descripcion\": \"hunter2\",\r\n        \"isActive\": false\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-por-id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-all",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/desafio-coopeuch/tareas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"desafio-coopeuch",
+						"tareas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
